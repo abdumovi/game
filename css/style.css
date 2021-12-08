@@ -1,0 +1,132 @@
+*,
+*::after,
+*::before{
+  box-sizing: border-box;
+}
+body{
+  height: 100%;
+  background:  radial-gradient(29.42% 60.42% at 50% -1%, #4DDB9C 0%, #157354 73%)
+}
+p{
+  margin: 0;
+}
+.container{
+  position: relative;
+  max-width: 1200px;
+  min-height: 100vh;
+  width: 100%;
+  margin: 0 auto;
+}
+.rock{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+.count{
+  width: 700px;
+  border: 3px solid rgba(255, 255, 255, 0.289199);
+  border-radius: 15px;
+  padding: 18px 24px;
+  margin-bottom: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.score{
+  width: 150px;
+  padding: 16px;
+  text-align: center;
+  background: linear-gradient(0deg, #F3F3F3 0%, #FFFFFF 100%);
+  box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.196706);
+  border-radius: 8px;
+}
+.score__text{
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 2.5px;
+  color: #CF5C5C;
+}
+.score__title{
+  font-size: 64px;
+  line-height: 64px;
+  text-align: center;
+  color: #565468;
+  
+}
+.rock__btns{
+  width: 600px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  flex-flow: wrap;
+  height: 360px;
+}
+#btn{
+  transition: all .4s ease;
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  cursor: pointer;
+  background-color: #fff;
+  position: relative;
+  margin: 0 20px;
+}
+
+.btn1{
+  border: 20px solid #4157BF;
+  background-repeat: no-repeat;
+  background-image: url('../img/im1.svg');
+  background-position: center;
+}
+.btn2{
+  border: 20px solid #A74C98;
+  background-repeat: no-repeat;
+  background-image: url('../img/im2.svg');
+  background-position: center;
+}.btn3{
+  border: 20px solid #DD3F3F;
+  background-repeat: no-repeat;
+  background-image: url('../img/im3.svg');
+  background-position: center;
+}
+.btn:active{
+  border-color: black;
+}
+.bet{
+  justify-content: space-between;
+}
+.rock__btns{
+  position: relative;
+}
+.table{
+  position: absolute;
+  width: 150px;
+  padding: 16px;
+  text-align: center;
+  background: linear-gradient(0deg, #F3F3F3 0%, #FFFFFF 100%);
+  box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.196706);
+  border-radius: 8px;
+  height: 100px; 
+  top: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: none;
+}
+.bet .table{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 25px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.hide{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 200;
+  display: none;
+}
+.d{
+  display: block;
+}
